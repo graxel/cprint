@@ -1,5 +1,5 @@
 # cprint
-Prints a list of items in a columnar format for easy reading
+Python function to print a list of items in a columnar format for easy reading.
 
 ## Example Usage
 
