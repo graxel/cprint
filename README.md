@@ -32,32 +32,19 @@ with the exception that the character `w` stands in for the `width` specifier.
 
 In this case, `format_spec` is set to align the columns right:
 ```
->>> cprint(items, columns=3, format_spec='{:>w}')
-          __add__           __rmod__        istitle
-        __class__           __rmul__        isupper
-     __contains__        __setattr__           join
-      __delattr__         __sizeof__          ljust
-          __dir__            __str__          lower
-          __doc__   __subclasshook__         lstrip
-           __eq__         capitalize      maketrans
-       __format__           casefold      partition
-           __ge__             center   removeprefix
- __getattribute__              count   removesuffix
-      __getitem__             encode        replace
-   __getnewargs__           endswith          rfind
-           __gt__         expandtabs         rindex
-         __hash__               find          rjust
-         __init__             format     rpartition
-__init_subclass__         format_map         rsplit
-         __iter__              index         rstrip
-           __le__            isalnum          split
-          __len__            isalpha     splitlines
-           __lt__            isascii     startswith
-          __mod__          isdecimal          strip
-          __mul__            isdigit       swapcase
-           __ne__       isidentifier          title
-          __new__            islower      translate
-       __reduce__          isnumeric          upper
-    __reduce_ex__        isprintable          zfill
-         __repr__            isspace
+>>> cprint(items, columns=6, format_spec='{:>w}')
+         __add__            __init__           __rmul__     format_map           join       rstrip
+       __class__   __init_subclass__        __setattr__          index          ljust        split
+    __contains__            __iter__         __sizeof__        isalnum          lower   splitlines
+     __delattr__              __le__            __str__        isalpha         lstrip   startswith
+         __dir__             __len__   __subclasshook__        isascii      maketrans        strip
+         __doc__              __lt__         capitalize      isdecimal      partition     swapcase
+          __eq__             __mod__           casefold        isdigit   removeprefix        title
+      __format__             __mul__             center   isidentifier   removesuffix    translate
+          __ge__              __ne__              count        islower        replace        upper
+__getattribute__             __new__             encode      isnumeric          rfind        zfill
+     __getitem__          __reduce__           endswith    isprintable         rindex
+  __getnewargs__       __reduce_ex__         expandtabs        isspace          rjust
+          __gt__            __repr__               find        istitle     rpartition
+        __hash__            __rmod__             format        isupper         rsplit
 ```
